@@ -1,0 +1,5 @@
+1. El resultado del asistente (R² = 0,98) se reproduce, pero usa dos columnas que no existen antes del lanzamiento: reproducciones_sem1 y es_hit.
+2. Sin esas columnas el error pasa de 1,39 a 6,16 puntos; el R² honesto, con partición temporal, es 0,70 y no 0,98.
+3. Contra la línea base (media por género, 10,44 puntos) el modelo corregido y mejorado (lineal + duración², 5,75) la reduce en 45%: es útil para priorizar, no para pronosticar una canción.
+4. «Precisión del 98 %», «generaliza bien» y «listo para canciones nuevas» no estaban sustentadas: R² no es porcentaje de aciertos y no hubo línea base ni prueba temporal.
+5. Recomendación: usar el modelo corregido (lineal + duración², MAE ≈ 5,75) con su ficha, y exigir al asistente el momento de la decisión como parte del encargo.

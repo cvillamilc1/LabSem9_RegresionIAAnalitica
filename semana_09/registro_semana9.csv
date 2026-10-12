@@ -1,0 +1,14 @@
+corrida,algoritmo,validacion,mae_cv_interno,mae,rmse,r2,sesgo,n_prueba,lectura,seleccionado
+Media global,media,temporal 2020-2025,11.07,11.06,13.77,-0.045,2.85,415,Sin modelo,
+Media por género,media por grupo,temporal 2020-2025,10.66,10.44,13.16,0.047,2.92,415,Línea base (la que hay que vencer),
+"Lineal, todas las columnas",lineal,temporal 2020-2025,1.41,1.41,1.97,0.979,0.12,415,"Con fuga (reproducciones_sem1, es_hit): no es válido",
+"Lineal, columnas válidas",lineal,temporal 2020-2025,6.26,5.87,7.36,0.701,0.31,415,Resultado honesto: solo lo que se sabe antes del lanzamiento,
+Válidas sin genero,lineal,temporal 2020-2025,7.03,6.9,8.5,0.602,0.6,415,Referencia: cuánto aporta la categórica,
+Válidas + duración²,lineal,temporal 2020-2025,6.06,5.75,7.15,0.718,0.26,415,Modelo seleccionado: menor error con la regla de parsimonia,sí
+Válidas + interacción bail×energía,lineal,temporal 2020-2025,6.08,5.77,7.17,0.717,0.28,415,Variante de clase,
+Válidas + idea propia (clima),lineal,temporal 2020-2025,6.05,5.75,7.15,0.718,0.26,415,Idea propia: bailabilidad × valencia,
+Gradient boosting,gradient boosting,temporal 2020-2025,6.74,6.66,8.29,0.621,2.45,415,Predice dentro del rango que vio; no extrapola la tendencia,
+Random Forest,random forest,temporal 2020-2025,7.44,7.13,8.88,0.566,2.31,415,Más complejo no es mejor,
+"Lineal + duración², partición aleatoria",lineal,aleatoria 80/20,,5.83,7.37,0.719,-0.14,400,Comparación de partición,
+"Gradient boosting, partición aleatoria",gradient boosting,aleatoria 80/20,,6.42,8.11,0.66,-0.36,400,Comparación de partición,
+"Random Forest, partición aleatoria",random forest,aleatoria 80/20,,6.94,8.82,0.598,-0.26,400,Comparación de partición,

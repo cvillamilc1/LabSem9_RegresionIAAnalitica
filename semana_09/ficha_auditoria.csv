@@ -1,0 +1,6 @@
+Afirmación del asistente,Evidencia de la verificación,Veredicto
+"«Alcanza un R² de 0,98»","Ejecutando su código con semilla fija se obtiene R² = 0,979 (≈ 0,98), idéntico en dos corridas",Reproducible
+«Una precisión del 98 %»,"R² es varianza explicada, no porcentaje de aciertos. En el modelo corregido, solo 51% de las canciones queda a ±5 puntos y 84% a ±10",Falso
+«Las variables más importantes son las reproducciones y el indicador de hit»,"Ninguna existe antes del lanzamiento. Sin ellas: R² = 0,69 y MAE = 6,16 (antes 1,39). Importancia en su modelo: reproducciones_sem1, es_hit",Fuga
+«Generaliza bien»,"Solo probó al azar. Con canciones de 2020-2025 y sin fuga: R² = 0,70 y MAE = 5,87",Compatible con la evidencia obtenida; la afirmación original no estaba sustentada
+«Listo para canciones nuevas»,"No comparó con una línea base (10,44) ni dijo cuánto se equivoca en puntos (5,87)",Sin sustento
